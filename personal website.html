@@ -1,16 +1,14 @@
 <!DOCTYPE html>
-<body style="background-color:#222;">
+<body style="background-color:#222;min-width: 1600px;max-width: 1900px; ">
 <!-- cover section -->
     <div id="cover">
-        <div id="title">Jeremy Lam</div>
+        <div id="title">Jeremy Lam</div><div id="tag"></div>
         <div id="coverpic" style="background-image:url(IMG_3080.JPG); background-size: 110%  ;"></div>
-        <div id="cov">
-            <img id="avatar" src="IMG_8064_edited.jpg" alt="what I look like"></img>
-        </div>
-        <div id="quote" ><div id="quotewrap">
-            <p>A boy hungry for knowledge.<br>A boy that worships math.<br>A boy who appreciates art.</p>
-        </div></div>
+        <div id="cov"><img id="avatar" src="IMG_8064_edited.jpg" alt="what I look like"></img></div>
+        <div id="quote" ><p>A boy hungry for knowledge.<br>A boy that loves math.<br>A boy who appreciates art.</p></div>
+        <div id="line"></div>
     </div>
+    
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 </body>
@@ -25,10 +23,19 @@
         background-repeat: no-repeat;
         background-position: center;
         height: 750px;
-        z-index: -1;
         filter:blur(5px);
+        background-blend-mode: darken;
     }
+    #line{
+        width: 1px;
+        height:200px;
+        background-color:aliceblue;
+        position:absolute;
+        left:50%;
+        top:40%;
+        z-index: 1;
 
+    }
     #title{
         width:50%;
         position:absolute;
@@ -36,13 +43,14 @@
         text-align: center;
         top: 20%;
         left:25%;
-        z-index: 1;
+        z-index: 2;
         font-family: 'Courier New', Courier, monospace;
+        color:white;
     }
     #avatar{
-        z-index: 0;
+        z-index: 1;
         width:25%;
-        right:18%;
+        right:20%;
         position:absolute;
         border-radius: 70%;
     }
@@ -55,20 +63,23 @@
     }
     #quote{
         font-size:22px;
-        /* font-family: Arial; */
+        font-family:serif;
         color: rgb(255, 255, 255);
-        text-align: left;
-        /* height: auto; */
+        text-align: right;
+        height: auto;
         width:auto;
         position:absolute;
         top:41.5%;
         left: 34%;
-        background-image:linear-gradient(to right,red,rgba(128, 0, 128, 0.609),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0));
-        padding: .2rem;
+        z-index: 1;
     }
-    #quotewrap{
-        padding: 1rem;
-        background-image:linear-gradient(to right,black,#222,rgba(0, 0, 0, 0)) ;
-        width:105%;
+    #tag{
+        position:absolute;
+        background-color:rgba(34, 34, 34, 0.603);
+        background-blend-mode: multiply;
+        width:100%;
+        height:100%;
+        z-index: 1;
+        filter: blur(5px);
     }
 </style>
