@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<body style="background-color:#222;min-width: 1600px;max-width: 1900px; width: auto; margin: 0 auto;zoom:80%; ">
-<!-- cover section -->
+<body style="background-color:#222;min-width: 1600px;max-width: 1900px; width: auto; margin: 0 auto;zoom:80%;"
+text="white">
+
+
+    <!-- cover section -->
     <div id="cover">
         <div id="title">Jeremy Lam</div><div id="tag"></div>
         <div id="coverpic" style="background-image:url(IMG_3080.JPG); background-size: 110%  ;"></div>
@@ -10,7 +13,27 @@
     </div>
     
     <br><br><br>
+    <div id="content">
 
+<!-- self-introduction -->
+        <div>
+            <p style="font-size: 30px; font-family:monospace;margin-left: 200px;"><u>About me</u></p>
+                <div style="margin-left:460px;">
+                    <div class="wrap"><div class="introduction">
+                        <p>
+                            My name is Jeremy Low, currently a senior at Morton Ranch highschool. I was born in Sai Gon, Vietnam.
+                            I am a person who is captivated by the beauty of math and physics. In my free time, I like to draw, cook,
+                            watch animes, play the guitar, and listen to music.
+                        </p>
+                    </div></div>
+                </div>
+        </div>
+<!--end self-introduction  -->
+<br><br><br><br><br><br>
+<!-- art works -->
+        <p style="font-size: 30px; font-family:monospace;margin-left:200px;"><u>My art projects</u></p>
+        <div id="art1" style="background-image: url();"></div>
+    </div>
 </body>
 
 <style>
@@ -81,5 +104,23 @@
         height:100%;
         z-index: 1;
         filter: blur(5px);
+    }
+    #content{
+        zoom: 125%;
+    }
+    .introduction{
+        max-height: fit-content;
+        background-color:#222;
+        font-size: 20px;
+        font-family:monospace;
+        /* text-align: justify; */
+        word-spacing: 3px;
+        padding: 1rem;
+    }
+    .wrap{
+        padding:.1rem;
+        background-image:linear-gradient(to right, red,purple,blue);
+        position:relative;
+        max-width:600px;
     }
 </style>
