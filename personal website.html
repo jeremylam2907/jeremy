@@ -10,7 +10,17 @@ text="white">
         <div id="cov"><img id="avatar" src="IMG_8064_edited.jpg" alt="what I look like"></img></div>
         <div id="quote" ><p>A boy hungry for knowledge.<br>A boy who loves math.<br>A boy that appreciates art.</p></div>
         <div id="line"></div>
-        <div id="links"></div>
+        <div  class="links">
+                <!-- bar buttons -->
+                <div><div id="menubar"></div>
+                <div id="menubar"></div>
+                <div id="menubar"></div></div>
+                    <div class="menulist">
+                            <a style="color:white" href="README.md">readme</a><br>
+                            <a style="color:white" href="README.md">readme</a>
+                    </div>
+        
+        </div>
     </div>
     
     <br><br><br>
@@ -132,14 +142,41 @@ text="white">
         position:relative;
         max-width:600px;
     }
-    #links{
+    #menubar{
+        width: 50px;
+        height: 5px;
+        background-color: white;
+        margin: 6px 0 ;
+        z-index:3;
+        padding:0px;
+    }
+    .links{
         position:fixed;
         width: 50px;
         height:30px;
-        transition: width 0.5s;
-        background: rgb(194, 194, 194);
+        transition: 0.5s;
+        background-color:rgba(34, 34, 34, 0);
         left: 100px;
         top: 100px;
         z-index: 3;
+        padding:0px;
+    }
+    .links:hover{
+        display:block;
+        width:400px;
+        height:900PX;
+        background-color:rgb(55, 79, 109);
+    }
+    .links:hover .menulist{display: block;}
+
+    .menulist{
+        z-index: 3;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: none;
+        font-size: 50px;
+        padding: 50px;
+        line-height: 50px;
     }
 </style>
