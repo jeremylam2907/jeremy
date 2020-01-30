@@ -15,12 +15,12 @@ text="white">
                 <div><div id="menubar"></div>
                 <div id="menubar"></div>
                 <div id="menubar"></div></div>
-                    <div class="menulist">
+                    <ul class="menulist">
                         <div>
-                            <a style="color:white" href="Honors.pdf">Writing Sample</a><br>
-                            <a style="color:white" href="README.md">readme</a>
+                            <li><a style="color:white" href="Honors.pdf">Writing Sample</a></li>
+                            <li><a style="color:white" href="README.md">readme</a></li>
                         </div>
-                    </div>
+                    </ul>
         
         </div>
     </div>
@@ -169,16 +169,23 @@ text="white">
         height:900PX;
         background-image: linear-gradient(to bottom, rgba(0, 94, 156, 0.616),rgba(34, 34, 34, 0.479),rgba(34, 34, 34, 0.205));
     }
-    .links:hover .menulist{display:block; transition-duration: 2s;}
-    /* .links:hover .menulist */
+    .links:hover .menulist{
+        visibility: visible; /* shows sub-menu */
+  opacity: 1;
+  z-index: 1;
+  transform: translateY(0%);
+  transition-delay: 0s, 3s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+    }
+    
     .menulist{
-        z-index: 3;
+
         color: black;
         padding: 12px 16px;
-        text-decoration: none;
         display: none;
         font-size: 35px;
         padding: 50px;
         line-height: 100px;
+
     }
+    
 </style>
